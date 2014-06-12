@@ -1,0 +1,4 @@
+spark
+=====
+
+Sparklines for Go.
