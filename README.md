@@ -16,7 +16,7 @@ sparkline := spark.Spark(boring_data)
 
 fmt.Println(sparkline)
 
-> ▁▂▃▄▅▆▇█
+> "▁▂▃▄▅▆▇█"
 
 ```
 
@@ -37,7 +37,7 @@ Not too cool, but it is easy to see where the problem is in this lineup. You'll 
 
 ```go
 temps := []float64{67, 71, 77, 85, 95, 104, 106, 105, 100, 89, 76, 66}
-spark.Spark(avgs)
+spark.Spark(temps)
 
 > "▁▂▃▄▆███▇▅▃▁"
 ```
