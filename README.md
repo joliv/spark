@@ -12,7 +12,7 @@ import (
 
 boring_data := []float64{1, 2, 3, 4, 5, 6, 7, 8}
 
-sparkline := spark.Spark(boring_data)
+sparkline := spark.Line(boring_data)
 
 fmt.Println(sparkline)
 
@@ -28,7 +28,7 @@ Nats season batting averages at a certain point in their 2014 season:
 
 ```go
 avgs := []float64{.270, .272, .293, .310, .274, .239, .237, .238, .111}
-spark.Spark(avgs)
+spark.Line(avgs)
 
 > "▇▇██▇▆▆▆▁"
 ```
@@ -37,7 +37,7 @@ Not too cool, but it is easy to see where the problem is in this lineup. You'll 
 
 ```go
 temps := []float64{67, 71, 77, 85, 95, 104, 106, 105, 100, 89, 76, 66}
-spark.Spark(temps)
+spark.Line(temps)
 
 > "▁▂▃▄▆███▇▅▃▁"
 ```

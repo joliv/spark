@@ -7,9 +7,9 @@ import (
 
 var steps = []rune("▁▂▃▄▅▆▇█")
 
-// Spark generates a sparkline string from a slice of
+// Line generates a sparkline string from a slice of
 // float64s.
-func Spark(nums []float64) string {
+func Line(nums []float64) string {
 	indices := normalize(nums)
 	var sparkline bytes.Buffer
 	for _, index := range indices {
