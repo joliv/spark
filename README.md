@@ -42,6 +42,6 @@ spark.Line(temps)
 > "▁▂▃▄▆███▇▅▃▁"
 ```
 
-Doesn't say much without knowing the min and max there (about 65° and 105°...why do people live there, again?) but you can clearly see the seasonal trend.
+Doesn't say much without knowing the min and max there (about 65° and 105°—why do people live there, again?) but you can clearly see the seasonal trend.
 
-Zach Holman does a great sell too, and this is really just a port of [his neat tool](https://github.com/holman/spark). There are some cool examples there. Oh, and if you really want it you can pore over the full docs at [godoc.org](http://godoc.org/github.com/joliv/spark).
+Zach Holman does a great sell too, and this is really just a port of [his neat tool](https://github.com/holman/spark). There are some cool examples there. Oh, and if you really want to you can pore over the full docs at [godoc.org](http://godoc.org/github.com/joliv/spark).
