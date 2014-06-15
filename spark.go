@@ -25,6 +25,11 @@ func normalize(nums []float64) []int {
 		nums[i] -= min
 	}
 	max := maximum(nums)
+	if max == 0 {
+		// Protect against division by zero
+		// This can happen if all values are the same
+		max = 1
+	}
 	for i, _ := range nums {
 		x := nums[i]
 		x /= max

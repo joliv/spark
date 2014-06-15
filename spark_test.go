@@ -24,3 +24,20 @@ func TestLine(t *testing.T) {
 		t.Errorf("Line(%v) = %v, want %v", in, x, out)
 	}
 }
+
+// If all values are the same they should be treated as "minimal value"
+func TestSameValues(t *testing.T) {
+	var (
+		in  = []float64{1}
+		out = "▁"
+	)
+	if x := Line(in); x != out {
+		t.Errorf("Line(%v) = %v, want %v", in, x, out)
+	}
+
+	in = []float64{1, 1, 1, 1}
+	out = "▁▁▁▁"
+	if x := Line(in); x != out {
+		t.Errorf("Line(%v) = %v, want %v", in, x, out)
+	}
+}
