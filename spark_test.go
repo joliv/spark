@@ -38,3 +38,11 @@ func TestSameValues(t *testing.T) {
 		t.Errorf("Line(%v) = %v, want %v", in, x, out)
 	}
 }
+
+func TestLineEmpty(t *testing.T) {
+	in := []float64{}
+	out := ""
+	if x := Line(in); x != out {
+		t.Errorf("Line(%v) = %v, want %v", in, x, out)
+	}
+}

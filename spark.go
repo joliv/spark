@@ -10,6 +10,9 @@ var steps = []rune("▁▂▃▄▅▆▇█")
 // Line generates a sparkline string from a slice of
 // float64s.
 func Line(nums []float64) string {
+	if len(nums) == 0 {
+		return ""
+	}
 	indices := normalize(nums)
 	var sparkline bytes.Buffer
 	for _, index := range indices {
