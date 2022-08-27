@@ -1,6 +1,6 @@
 ### spark
 
-##### Sparklines for Go, inspired by [holman/spark](https://github.com/holman/spark). Why this deserves 150 stars I will never know.
+##### Cloning [holman/spark](https://github.com/holman/spark) for Go
 
 A quick example:
 
